@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(176, 211, 242);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 23%);
+    border-radius: 20px;
+    max-width: 370px;
+    overflow: hidden;
+    padding: 15px, 0;
+}
+#answer{
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+    position: relative;
+    padding: 20px;
+    font-size: 3rem;
+    text-align: right;
+    border: none;
+    background-color: hsl(0, 0%, 15%);
+    color: white;
+}
+#btns{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+    padding: 35px;
+}
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+.double{
+    grid-column: span 2;
+    text-align: left;
+    padding: 0 25px;
+    width: calc(100% - 1px);
+    text-align: center;
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+.operator{
+    background-color: hsl(25, 100%, 50%);
+}
+.operator:hover{
+    background-color: hsl(25, 100%, 60%);
+}
+.operator:active{
+    background-color: hsl(25, 100%, 70%);
+}
